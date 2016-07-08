@@ -533,7 +533,7 @@ public class GooglePlayAPI {
 
 	return new String[][] {
 		{ "Accept-Language", getLocalization()!=null?getLocalization():"en-EN" },
-		{ "Authorization", "GoogleLogin auth=" + token },
+		{ "Authorization", "Bearer " + token },
 		{ "X-DFE-Enabled-Experiments", "cl:billing.select_add_instrument_by_default" },
 		{
 			"X-DFE-Unsupported-Experiments",
